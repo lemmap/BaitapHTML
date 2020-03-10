@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        .container{
+            width: 500px;
+            border: brown 5px;
+            border-style: solid;
+            margin auto;
+        }
+        .mainForm{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="mainForm">
+        <h2>Registration Form</h2>
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post" name="registration_form">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td><input type="radio" name="gender"><label>Nam</label><input type="radio" name="gender"><label>Nữ</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="btnSubmit" value="Đăng kí" style="padding:5px;color: azure; background-color: brown"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

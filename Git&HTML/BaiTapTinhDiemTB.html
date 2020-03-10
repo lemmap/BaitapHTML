@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DiemTB</title>
+</head>
+<body>
+<button type="button" onclick="averageCalculate()">Tinh diem trung binh</button>
+<button type="button" onclick="convertCelsiustoFahrenheit"> Chuyen doi nhiet do</button>
+<script>
+    function averageCalculate() {
+        let inputMath = prompt("nhap diem toan ");
+        let inputChem = prompt("nhap diem hoa");
+        let inputPhy = prompt("nhap diem ly");
+        let mathpoint = parseInt(inputMath);
+        let chempoint = parseInt(inputChem);
+        let phypoint = parseInt(inputPhy);
+        let sumpoint = (mathpoint + chempoint + phypoint);
+        let average = sumpoint/3;
+        document.write("diem trung binh cua sv do la "+average);
+        document.write("tong diem cua sinh vien do la "+sumpoint);
+    }
+    function convertCelsiustoFahrenheit() {
+            let inputCelsius = prompt("nhap do C");
+            let celsius = parseInt(inputCelsius);
+            let fahrenheit = celsius*9/5 -32;
+            document.write("ket qua la "+fahrenheit);
+
+    }
+
+</script>
+</body>
+</html>
