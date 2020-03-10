@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+    <link rel="stylesheet" type="text/css" href="css/[Baitap]_TaoFormLaySurvey-SurveyForm.css">
+</head>
+<body>
+<div class="header">
+    <h2 class="headerForm">Market Research Survey</h2>
+    <div class="subheaderForm">Please take a few moment to complete this survey.</div>
+    <hr>
+</div>
+<div class="body">
+    <form action="#" method="post">
+        <ul class="ulStyle">
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader">What is your age range?</label></legend>
+                    <select name="slAge" >
+                        <option value="1824">18-24</option>
+                        <option value="2434">24-34</option>
+                        <option value="3550">35-50</option>
+                        <option value="50+">50+</option>
+                    </select>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader">What is your yearly income range?</label></legend>
+                    <select name="slIncome">
+                        <option value="0-25k">0$-25.000$</option>
+                        <option value="25-50k">25.001$-50.000$</option>
+                        <option value="50-100k"></option>
+                        <option value="100k+"></option>
+                    </select>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader">Gender Identity</label></legend>
+                    <input type="radio" name="rdGender" value="male"><label>Male</label><br>
+                    <input type="radio" name="rdGender" value="female"><label>Female</label><br>
+                    <input type="radio" name="rdGender" value="non"><label>Nonbinary</label><br>
+                    <input type="radio" name="rdGender" value="other"><label>Other</label><br>
+                    <input type="text" name="txtOtherGender" size="20"><br>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader"> Which of the following products have your purchased in the last 2 months. Please check all that apply.</label></legend>
+                    <input type="checkbox" name="ckbProduct" value="product1"><label>Product 1</label><br>
+                    <input type="checkbox" name="ckbProduct" value="product2"><label>Product 2</label><br>
+                    <input type="checkbox" name="ckbProduct" value="product3"><label>Product 3</label><br>
+                    <input type="checkbox" name="ckbProduct" value="product4"><label>Product 4</label><br>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend class="questionHeader"><label>How often would you use our new product?</label></legend>
+                    <input type="radio" name="rdHowOften" value="daily"><label>Daily</label><br>
+                    <input type="radio" name="rdHowOften" value="weekly"><label>Weekly</label><br>
+                    <input type="radio" name="rdHowOften" value="monthly"><label>Monthly</label><br>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader">What would you pay for the new product?</label></legend>
+                    <label>$</label><input type="text" name="txtDollar" size="10" placeholder="Dollars"> . <input type="text" name="txtCent" placeholder="Cents">
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label class="questionHeader">What features would you like to see in the new product.</label></legend>
+                    <textarea name="tarFeedback" rows="5" cols="200"></textarea>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset class="fieldsetStyle">
+                    <legend><label style="font-size: small">Please rate your level of agreement with the following statements.</label></legend>
+                    <table class="tableEnd">
+                        <tr class="headTable">
+                            <td>
+                            </td>
+                            <td>Strongly Disagree</td>
+                            <td>Disagree</td>
+                            <td>Agree</td>
+                            <td>Strongly Agree</td>
+                        </tr>
+                        <tr>
+                            <td class="firsColum">Our products are priced fairly.</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion1" value="1"><br><label class="valueOfTableRadio">1</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion1" value="2"><br><label class="valueOfTableRadio">2</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion1" value="3"><br><label class="valueOfTableRadio">3</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion1" value="4"><br><label class="valueOfTableRadio">4</td>
+                        </tr>
+                        <tr style="background-color: lightgray">
+                            <td class="firsColum">Our products are high quality.</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion2" value="1"><br><label class="valueOfTableRadio">1</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion2" value="2"><br><label class="valueOfTableRadio">2</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion2" value="3"><br><label class="valueOfTableRadio">3</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion2" value="4"><br><label class="valueOfTableRadio">4</td>
+                        </tr>
+                        <tr>
+                            <td class="firsColum">You would recommend our product to a friend or coworker.</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion3" value="1"><br><label class="valueOfTableRadio">1</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion3" value="2"><br><label class="valueOfTableRadio">2</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion3" value="3"><br><label class="valueOfTableRadio">3</td>
+                            <td class="radioTD"><input type="radio" name="rdQuestion3" value="4"><br><label class="valueOfTableRadio">4</td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </li>
+            <li style="padding: 20px"><input type="submit" name="btnSubmit" value="Submit"></li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>
