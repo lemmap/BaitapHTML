@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien</title>
+    <style>
+        label{
+            display:block;
+            margin: 5px;
+        }
+        div{
+            display: inline-block;
+            float: left;
+            margin-left: 20px;
+            text-align: center;
+        }
+        option{
+            width:inherit;
+        }
+
+    </style>
+</head>
+<body>
+<form action="" method="post">
+    <div>
+        <label for="inputAmount"> Amount </label>
+        <input type="text" title="Amount" id="inputAmount">
+    </div>
+    <div>
+        <label for="fromCurrency">From Currency</label>
+        <select name="currencyFrom" id="fromCurrency">
+            <option value="vietnam">VietNam</option>
+            <option value="usd">USD</option>
+        </select>
+    </div>
+    <div>
+        <label for="toCurrency"> To Currency</label>
+        <select name="currencyTo" id="toCurrency">
+            <option value="vietnam">VietNam</option>
+            <option value="use">USD</option>
+        </select>
+    </div>
+    <div>
+        <button type="button" id="convert" name="doConvert"onclick="convertMoney()">Convert</button>
+    </div>
+
+</form>
+<script>
+    function convertMoney() {
+        var amountInput = parseInt(document.getElementById("inputAmount").value);
+        var selectedInput =document.getElementById("inputCurrency").value;
+
+        alert(selectedInput);
+
+    }
+</script>
+</body>
+
+</html>

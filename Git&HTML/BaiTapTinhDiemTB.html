@@ -6,7 +6,9 @@
 </head>
 <body>
 <button type="button" onclick="averageCalculate()">Tinh diem trung binh</button>
-<button type="button" onclick="convertCelsiustoFahrenheit"> Chuyen doi nhiet do</button>
+<button type="button" onclick="convertCelsiustoFahrenheit()"> Chuyen doi nhiet do</button>
+<button type="button" onclick="areaCalculate()">Dien tich hinh tron</button>
+
 <script>
     function averageCalculate() {
         let inputMath = prompt("nhap diem toan ");
@@ -19,12 +21,24 @@
         let average = sumpoint/3;
         document.write("diem trung binh cua sv do la "+average);
         document.write("tong diem cua sinh vien do la "+sumpoint);
+
+
+        return;
+
     }
     function convertCelsiustoFahrenheit() {
             let inputCelsius = prompt("nhap do C");
             let celsius = parseInt(inputCelsius);
             let fahrenheit = celsius*9/5 -32;
             document.write("ket qua la "+fahrenheit);
+
+    }
+    function areaCalculate(){
+        let inputRadius = parseInt(prompt("nhap ban kinh "));
+        let areaRound = 3/4*3.14*Math.exp(inputRadius);
+        let perimeterRound =  3.14*Math.exp(inputRadius);
+        document.write("dien tich hinh tron la "+areaRound );
+        document.write("<br/> chu vi hinh tron la " +perimeterRound)
 
     }
 
