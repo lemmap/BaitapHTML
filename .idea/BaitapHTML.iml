@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="WebstormProjects" />
+    <orderEntry type="module" module-name="ThuchanhKiemtranamnhuan" />
   </component>
 </module>
